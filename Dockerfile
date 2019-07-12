@@ -1,7 +1,7 @@
 FROM  alpine:3.10
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
-    LANG=de_DE.UTF-8 \
+ENV LANG=de_DE.UTF-8 \
     LC_ALL=de_DE.UTF-8 \
     LANGUAGE=de_DE.UTF-8 \
     LC_CTYPE=de_DE.UTF-8 \
