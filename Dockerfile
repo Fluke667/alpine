@@ -80,8 +80,8 @@ SSH_PRIV_KEY_ED25519="/etc/ssh/keys/ssh_host_ed25519_key" \
 SSH_PUB_KEY_ED25519="/etc/ssh/keys/ssh_host_ed25519_key.pub" \
 SSH_PRIV_KEY_ECDSA="/etc/ssh/keys/ssh_host_ecdsa_key" \
 SSH_PUB_KEY_ECDSA="/etc/ssh/keys/ssh_host_ecdsa_key.pub" \
-SSH_USERKEYS_ROOT="" \
-SSH_USER_KEYS_SYSOP="" \
+SSH_KEYS_ROOT_ID=/root/.ssh/id_rsa \
+SSH_KEYS_ROOT_CRT=/root/.ssh/id_rsa.pub \
 # Openvpn Enviroment 
 OVPN_DIR=/etc/openvpn \
 OVPN_CONFIG=/etc/openvpn/server.conf \
