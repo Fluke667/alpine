@@ -61,11 +61,11 @@ SSH_PRIV_KEY_ED25519="/etc/ssh/keys/ssh_host_ed25519_key" \
 SSH_PUB_KEY_ED25519="/etc/ssh/keys/ssh_host_ed25519_key.pub" \
 SSH_PRIV_KEY_ECDSA="/etc/ssh/keys/ssh_host_ecdsa_key" \
 SSH_PUB_KEY_ECDSA="/etc/ssh/keys/ssh_host_ecdsa_key.pub" \
-SSH_ROOTKEY_ID=/root/.ssh/id_rsa \
-SSH_ROOTKEY_CRT=/root/.ssh/id_rsa.pub \
-SSH_ROOTKEY_SIZE=2048 \
-SSH_ROOTKEY_TYPE=rsa \
-SSH_ROOTKEY_PASS=MyPassword \
+SSH_ROOTKEY_ID="/root/.ssh/id_rsa" \
+SSH_ROOTKEY_CRT="/root/.ssh/id_rsa.pub" \
+SSH_ROOTKEY_SIZE="2048" \
+SSH_ROOTKEY_TYPE="rsa" \
+SSH_ROOTKEY_PASS="MyPassword" \
 # Easyrsa Enviroment
 EASYRSA=/usr/share/easy-rsa \
 EASYRSA_OPENSSL=openssl \
