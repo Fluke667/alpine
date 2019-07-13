@@ -187,5 +187,4 @@ RUN apk add --no-cache --no-progress tzdata
 
 ONBUILD RUN \
     echo "$TZ" > /etc/timezone \
-    && cp "/usr/share/zoneinfo/$TZ" /etc/localtime \
-    && chmod 0700 /etc/openvpn/vpnconf
+    && cp "/usr/share/zoneinfo/$TZ" /etc/localtime
