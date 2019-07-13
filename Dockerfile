@@ -82,6 +82,8 @@ SSH_PRIV_KEY_ECDSA="/etc/ssh/keys/ssh_host_ecdsa_key" \
 SSH_PUB_KEY_ECDSA="/etc/ssh/keys/ssh_host_ecdsa_key.pub" \
 SSH_KEYS_ROOT_ID=/root/.ssh/id_rsa \
 SSH_KEYS_ROOT_CRT=/root/.ssh/id_rsa.pub \
+SSH_KEYS_ROOT_SIZE=2048 \
+SSH_KEYS_ROOT_TYPE=rsa \
 # Openvpn Enviroment 
 OVPN_DIR=/etc/openvpn \
 OVPN_CONFIG=/etc/openvpn/server.conf \
