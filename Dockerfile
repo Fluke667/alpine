@@ -39,6 +39,8 @@ CRT_DAYS=365 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
 CRT_CERT_DIR=/etc/ssl/certs \
+CRT_ISSUER_EXT=/etc/ssl/issuer.ext
+CRT_PUBLIC_EXT=/etc/ssl/public.ext
 # Easyrsa Enviroment
 EASYRSA=/usr/share/easy-rsa \
 EASYRSA_OPENSSL=openssl \
