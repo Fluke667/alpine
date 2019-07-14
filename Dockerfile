@@ -35,15 +35,12 @@ CRT_CA_NAME=ca \
 CRT_ISSUER_NAME=private \
 CRT_PUBLIC_NAME=public \
 CRT_RSA_KEY_NUMBITS=2048 \
+CRT_DIFF_NAME=dhparam \
+CRT_DIFF_KEY=2048 \
 CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
-### ca crt
 CRT_CERT_DIR=/etc/certs \
-CRT_CA_DIR=/etc/certs/ca \
-CRT_CERT_CA=/etc/certs/ca/ca.crt \
-CRT_KEY_CA=/etc/certs/ca/ca.key \
-CRT_SRL_CA=/etc/certs/ca/ca.srl \
 #
 CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
 CRT_PUBLIC_EXT=/etc/ssl/public.ext \
