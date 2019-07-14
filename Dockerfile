@@ -27,11 +27,11 @@ CLIENT_NAME=client \
 HOSTNAME=hostname \
 # Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
-CRT_SERVER_CN=server \
-CRT_CLIENT_CN=client \
+CRT_SRV_CN=server \
+CRT_CLI_CN=client \
 CRT_ISSUER_CN=MyName \
 CRT_ROOT_CN=Root \
-CRT_PUBLIC_CN=*.example.com \
+CRT_PUB_CN=*.example.com \
 CRT_COUNTY=DE \
 CRT_STATE=Bavaria \
 CRT_LOCATION=Nuremberg \
@@ -47,7 +47,7 @@ CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
 CRT_CA_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=CA" \
-CRT_ISSUER_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_USER_CN}" \
+CRT_ISSUER_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_ISSUER_CN}" \
 CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_PUB_CN}" \
 CRT_SRV_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=${CRT_SRV_CN}" \
 CRT_CLI_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=${CRT_CLI_CN}" \
