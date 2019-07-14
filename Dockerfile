@@ -31,19 +31,19 @@ CRT_ORGANISATION=TB \
 CRT_ROOT_CN=Root \
 CRT_ISSUER_CN=Example \
 CRT_PUBLIC_CN=*.example.com \
-CRT_ROOT_NAME=root \
-CRT_ISSUER_NAME=example \
+CRT_ROOT_NAME=rootCA \
+CRT_ISSUER_NAME=private \
 CRT_PUBLIC_NAME=public \
 CRT_RSA_KEY_NUMBITS=2048 \
 CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
 ### ca crt
-CRT_CERT_DIR=/etc/ssl/certs \
-CRT_CA_DIR=$CRT_CERT_DIR/ca \
-CRT_CERT_CA=$CRT_CA_DIR/ca.crt \
-CRT_KEY_CA=$CRT_CA_DIR/ca.key \
-CRT_SRL_CA=$CRT_CA_DIR/ca.srl \
+CRT_CERT_DIR=/etc/certs \
+CRT_CA_DIR=/etc/certs/ca \
+CRT_CERT_CA=/etc/certs/ca/ca.crt \
+CRT_KEY_CA=/etc/certs/ca/ca.key \
+CRT_SRL_CA=/etc/certs/ca/ca.srl \
 #
 CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
 CRT_PUBLIC_EXT=/etc/ssl/public.ext \
