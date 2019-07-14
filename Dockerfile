@@ -42,8 +42,7 @@ CRT_ISSUER_NAME=private \
 CRT_PUBLIC_NAME=public \
 CRT_KEY_LENGTH=2048 \
 CRT_DIFF_NAME=dhparam \
-CRT_DIFF_2048=2048 \
-CRT_DIFF_4096=4096 \
+CRT_DIFF_LENGTH=4096 \
 CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
@@ -52,9 +51,11 @@ CRT_ISSUER_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_USER_CN}" \
 CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_PUB_CN}" \
 CRT_SRV_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=${CRT_SRV_CN}" \
 CRT_CLI_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=${CRT_CLI_CN}" \
-#
 CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
 CRT_PUBLIC_EXT=/etc/ssl/public.ext \
+CRT_SERVER_EXT=/etc/ssl/server.ext \
+CRT_CLIENT_EXT=/etc/ssl/client.ext \
+
 # Openssh Enviroment
 SSH_BASE_DIR="/etc/ssh" \
 SSH_KEYS_DIR="${SSH_BASE_DIR}/keys" \
