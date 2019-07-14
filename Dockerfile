@@ -39,7 +39,7 @@ CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
 ### ca crt
-CRT_CERT_DIR=/etc/certs/ssl \
+CRT_CERT_DIR=/etc/ssl/certs \
 CRT_CA_DIR=$CRT_CERT_DIR/ca \
 CRT_CERT_CA=$CRT_CA_DIR/ca.crt \
 CRT_KEY_CA=$CRT_CA_DIR/ca.key \
