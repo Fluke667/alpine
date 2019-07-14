@@ -47,10 +47,10 @@ CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
 CRT_CA_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=CA" \
-CRT_ISSUER_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_ISSUER_CN}" \
-CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=${CRT_PUB_CN}" \
-CRT_SRV_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=${CRT_SRV_CN}" \
-CRT_CLI_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=${CRT_CLI_CN}" \
+CRT_ISSUER_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=MyName" \
+CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=*.example.com" \
+CRT_SRV_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=server" \
+CRT_CLI_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=client" \
 CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
 CRT_PUBLIC_EXT=/etc/ssl/public.ext \
 CRT_SERVER_EXT=/etc/ssl/server.ext \
