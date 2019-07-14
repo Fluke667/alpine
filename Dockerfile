@@ -38,7 +38,13 @@ CRT_RSA_KEY_NUMBITS=2048 \
 CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
-CRT_CERT_DIR=/etc/ssl/certs \
+### ca crt
+CRT_CERT_DIR=/etc/certs/ssl \
+CRT_CA_DIR=$CRT_CERT_DIR/ca \
+CRT_CERT_CA=$CRT_CA_DIR/ca.crt \
+CRT_KEY_CA=$CRT_CA_DIR/ca.key \
+CRT_SRL_CA=$CRT_CA_DIR/ca.srl \
+#
 CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
 CRT_PUBLIC_EXT=/etc/ssl/public.ext \
 # Openssh Enviroment
