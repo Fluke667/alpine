@@ -25,6 +25,7 @@ IP_ADDR=RealIPAdress \
 INTERFACE=eth0 \
 SERVER_NAME=server \
 CLIENT_NAME=client \
+HOSTNAME=hostname \
 # Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SERVER_CN=server \
