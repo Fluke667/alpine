@@ -25,38 +25,50 @@ IP_ADDR=${IP} \
 SERVER_NAME=server \
 CLIENT_NAME=client \
 HOSTNAME=hostname \
-# Openssl Certificate Generate
+############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
+# CRT CA
+CRT_CA=/etc/certs/ca \
+CRT_CA_CN=ca \
+CRT_CA_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=CA" \
+CRT_CA_EXT=/etc/ssl/ca.ext \
+# CRT ISSUER
+
+# CRT SRV
+CRT_SRV=/etc/certs/server \
 CRT_SRV_CN=server \
+CRT_SRV_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=server" \
+CRT_SRV_EXT=/etc/ssl/server.ext \
+# CRT CLI
+CRT_CLI=/etc/certs/client \
 CRT_CLI_CN=client \
+CRT_CLI_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=client" \
+CRT_CLI_EXT=/etc/ssl/client.ext \
+# CRT PUBLIC
+CRT_PUB=/etc/certs/public \
+CRT_PUB_CN=public \
+CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=public" \
+CRT_PUB_EXT=/etc/ssl/public.ext \
+
+
+
+
 CRT_ISSUER_CN=MyName \
 CRT_ROOT_CN=Root \
-CRT_PUB_CN=*.example.com \
 CRT_COUNTY=DE \
 CRT_STATE=Bavaria \
 CRT_LOCATION=Nuremberg \
 CRT_ORGANISATION=TB \
-CRT_CA_NAME=ca \
 CRT_ROOT_NAME=root \
 CRT_ISSUER_NAME=private \
-CRT_PUBLIC_NAME=public \
-CRT_SERVER_NAME=server \
-CRT_CLIENT_NAME=client \
 CRT_KEY_LENGTH=2048 \
 CRT_DIFF_NAME=dhparam \
 CRT_DIFF_LENGTH=4096 \
 CRT_DAYS=3650 \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
-CRT_CA_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=CA" \
-CRT_ISSUER_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=MyName" \
-CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=*.example.com" \
-CRT_SRV_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=server" \
-CRT_CLI_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=client" \
 CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
-CRT_PUBLIC_EXT=/etc/ssl/public.ext \
-CRT_SERVER_EXT=/etc/ssl/server.ext \
-CRT_CLIENT_EXT=/etc/ssl/client.ext \
+
 
 # Openssh Enviroment
 SSH_BASE_DIR="/etc/ssh" \
