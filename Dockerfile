@@ -194,9 +194,12 @@ PRV_METHOD=aes-256-gcm \
 PRV_TIMEOUT=60 \
 PRV_CONF=/etc/shadowsocks-libev/privoxy.json
 
+RUN apk add --no-cache --no-progress tzdata wget
 
-
-RUN apk add --no-cache --no-progress tzdata
+RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
+    echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
+    apk update && apk add --no-cache obfs4proxy meek simple-obfs
+    #echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
 
 ONBUILD RUN \
     echo "$TZ" > /etc/timezone \
