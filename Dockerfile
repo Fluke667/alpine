@@ -27,6 +27,21 @@ CLIENT_NAME=client \
 HOSTNAME=hostname \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
+CRT_SSL_DIR=/etc/ssl \
+CRT_SSL_CNF=/etc/ssl/openssl.cnf \
+CRT_ISSUER_CN=MyName \
+CRT_ROOT_CN=Root \
+CRT_COUNTY=DE \
+CRT_STATE=Bavaria \
+CRT_LOCATION=Nuremberg \
+CRT_ORGANISATION=TB \
+CRT_ROOT_NAME=root \
+CRT_KEY_LENGTH=2048 \
+CRT_DIFF_NAME=dhparam \
+CRT_DIFF_LENGTH=4096 \
+CRT_DAYS=3650 \
+CRT_KEYSTORE_NAME=Keystore \
+CRT_KEYSTORE_PASS=changeit \
 # CRT CA
 CRT_CA=/etc/certs/ca \
 CRT_CA_CN=ca \
@@ -56,21 +71,6 @@ CRT_PUB_EXT=/etc/ssl/public.ext \
 
 
 
-CRT_ISSUER_CN=MyName \
-CRT_ROOT_CN=Root \
-CRT_COUNTY=DE \
-CRT_STATE=Bavaria \
-CRT_LOCATION=Nuremberg \
-CRT_ORGANISATION=TB \
-CRT_ROOT_NAME=root \
-CRT_ISSUER_NAME=private \
-CRT_KEY_LENGTH=2048 \
-CRT_DIFF_NAME=dhparam \
-CRT_DIFF_LENGTH=4096 \
-CRT_DAYS=3650 \
-CRT_KEYSTORE_NAME=Keystore \
-CRT_KEYSTORE_PASS=changeit \
-CRT_ISSUER_EXT=/etc/ssl/issuer.ext \
 
 
 # Openssh Enviroment
