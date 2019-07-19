@@ -40,6 +40,7 @@ CRT_KEY_LENGTH=2048 \
 CRT_DIFF_NAME=dhparam \
 CRT_DIFF_LENGTH=4096 \
 CRT_DAYS=3650 \
+CRT_CA_COMB=/etc/certs/ca-comb \
 CRT_KEYSTORE=/etc/certs/Keystore \
 CRT_KEYSTORE_NAME=Keystore \
 CRT_KEYSTORE_PASS=changeit \
