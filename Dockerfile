@@ -103,7 +103,7 @@ SSH_ROOTKEY_TYPE=rsa \
 SSH_ROOTKEY_PASS=MyPassword \
 # Openvpn Enviroment 
 OVPN_DIR=/etc/openvpn \
-OVPN_CONFIG=/etc/openvpn/server.conf \
+OVPN_CONFIG=/etc/openvpn/openvpn \
 OVPN_DH_KEY_SIZE=2048 \
 OVPN_RSA_KEY_SIZE=2048 \
 OVPN_DNS=1 \
