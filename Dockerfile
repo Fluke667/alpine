@@ -33,7 +33,10 @@ CRT_CA_CN=ca \
 CRT_CA_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=CA" \
 CRT_CA_EXT=/etc/ssl/ca.ext \
 # CRT ISSUER
-
+CRT_ISS=/etc/certs/issuer \  
+CRT_ISS_CN=issuer \  
+CRT_ISS_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=issuer" \   
+CRT_ISS_EXT=/etc/ssl/issuer.ext \
 # CRT SRV
 CRT_SRV=/etc/certs/server \
 CRT_SRV_CN=server \
