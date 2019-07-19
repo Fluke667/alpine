@@ -198,8 +198,8 @@ RUN apk add --no-cache --no-progress tzdata wget
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
     echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
+    echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
     apk update && apk add --no-cache obfs4proxy meek simple-obfs
-    #echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
 
 ONBUILD RUN \
     echo "$TZ" > /etc/timezone \
