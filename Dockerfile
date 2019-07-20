@@ -20,10 +20,13 @@ TZ=Europe/Berlin \
 GOROOT=/usr/lib/go \
 GOPATH=/go \
 PATH=/go/bin:$PATH \
-IP_ADDR=${IP} \       
+IP_ADDR=${IP} \
+IP_NONROUTE=0.0.0.0 \
+IP_LOCAL=127.0.0.1 \
 SERVER_NAME=server \
 CLIENT_NAME=client \
 HOSTNAME=hostname \
+COMMENT=## \
 SUPERVISOR_CONF_DIR=/etc/supervisor.d \
 SUPERVISOR_CONF_FILE=/etc/supervisor \
 ############### Openssl Certificate Generate
@@ -167,12 +170,29 @@ SSLH_DL=https://github.com/yrutschle/sslh.git \
 #PLUGIN_V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.0/v2ray-plugin-linux-amd64-8cea1a3.tar.gz \
 #PLUGIN_CLOAK_DL=https://github.com/cbeuw/cloak.git \
 # TOR Relay Enviroment
-TOR_USER=MyUser \
+TOR_CONF=/etc/tor/torrc \
+TOR_SOCKS=/etc/tor/torsocks \
+TOR_USER=LinuxUser \
 TOR_NICK=MyNick \
 TOR_EMAIL=My@email.com \
 TOR_PASS=MyPass \
 TORSOCKS_USERNAME=MyUser \
 TORSOCKS_PASSWORD=MyPass \
+TOR_ADD=ServerTransportPlugin \
+TOR_FTE=/usr/bin/fteproxy \
+TOR_MEEK=/usr/bin/meek-server \
+TOR_OBFS3=/usr/bin/obfsproxy \
+TOR_OBFS4=/usr/bin/obfs4proxy \
+TOR_SNOW=/usr/bin/webrtc \
+TOR_OPT_FTE="--mode server --managed" \
+TOR_OPT_MEEK="--port 7002 --cert cert.pem --key key.pem" \
+TOR_OPT_OBFS3="managed" \
+TOR_OPT_OBFS4="Custom" \
+TOR_OPT_SNOW="-http 127.0.0.1:9090" \
+
+
+
+
 # sslh Enviroment
 SSLH=0.0.0.0:443 \
 SSLH_HOST=127.0.0.1 \
