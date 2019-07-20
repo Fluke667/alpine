@@ -176,8 +176,8 @@ TOR_USER=TorD \
 TOR_NICK=MyNick \
 TOR_EMAIL=My@email.com \
 TOR_PASS=MyPass \
-TORSOCKS_USERNAME=MyUser \
-TORSOCKS_PASSWORD=MyPass \
+TORSOCKS_USER=MyUser \
+TORSOCKS_PASS=MyPass \
 TOR_ADD=ServerTransportPlugin \
 TOR_FTE=/usr/bin/fteproxy \
 TOR_MEEK=/usr/bin/meek-server \
@@ -218,7 +218,7 @@ RUN apk add --no-cache --no-progress tzdata wget
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
     echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
     echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
-    apk update && apk add --no-cache obfs4proxy meek simple-obfs
+    #apk update && apk add --no-cache obfs4proxy meek simple-obfs
 
 ONBUILD RUN \
     echo "$TZ" > /etc/timezone \
