@@ -172,7 +172,7 @@ SSLH_DL=https://github.com/yrutschle/sslh.git \
 # TOR Relay Enviroment
 TOR_CONF=/etc/tor/torrc \
 TOR_SOCKS=/etc/tor/torsocks \
-TOR_USER=LinuxUser \
+TOR_USER=TorD \
 TOR_NICK=MyNick \
 TOR_EMAIL=My@email.com \
 TOR_PASS=MyPass \
@@ -189,9 +189,6 @@ TOR_OPT_MEEK="--port 7002 --cert cert.pem --key key.pem" \
 TOR_OPT_OBFS3="managed" \
 TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
-
-
-
 
 # sslh Enviroment
 SSLH=0.0.0.0:443 \
