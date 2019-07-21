@@ -20,6 +20,7 @@ TZ=Europe/Berlin \
 LOGGER=true \
 GOROOT=/usr/lib/go \
 GOPATH=/go \
+GO111MODULE=on \
 PATH=/go/bin:$PATH \
 IP_ADDR=${IP} \
 IP_NONROUTE=0.0.0.0 \
