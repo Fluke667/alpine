@@ -202,7 +202,17 @@ PRV_LOCAL_PORT=1080 \
 PRV_PASS=MyPass \
 PRV_METHOD=aes-256-gcm \
 PRV_TIMEOUT=60 \
-PRV_CONF=/etc/shadowsocks-libev/privoxy.json
+PRV_CONF=/etc/shadowsocks-libev/privoxy.json \
+############### Golang Enviroment
+GOROOT=/usr/lib/go \
+GOPATH=/go \
+GOBIN=/go/bin \
+GO111MODULE=on \
+PATH=/go/bin:$PATH \
+GOOS="$(go env GOOS)" \
+GOARCH="$(go env GOARCH)" \
+GOHOSTOS="$(go env GOHOSTOS)" \
+GOHOSTARCH="$(go env GOHOSTARCH)"
 
 RUN apk add --no-cache --no-progress tzdata wget
 
