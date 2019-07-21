@@ -17,6 +17,7 @@ LC_ADDRESS=de_DE.UTF-8 \
 LC_TELEPHONE=de_DE.UTF-8 \
 LC_MEASUREMENT=de_DE.UTF-8 \
 TZ=Europe/Berlin \
+LOGGER=true \
 GOROOT=/usr/lib/go \
 GOPATH=/go \
 PATH=/go/bin:$PATH \
