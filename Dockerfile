@@ -28,8 +28,6 @@ SERVER_NAME=server \
 CLIENT_NAME=client \
 HOSTNAME=hostname \
 COMMENT=## \
-SUPERVISOR_CONF_DIR=/etc/supervisor.d \
-SUPERVISOR_CONF_FILE=/etc/supervisor \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SSL_DIR=/etc/ssl \
@@ -154,11 +152,11 @@ KCP_SOCKBUF=16777216 \
 KCP_NOCOMP='' \
 #KCP_NOCOMP=--nocomp \
 KCP_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
+V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin.git \
 PRVIVOXY_DL=https://github.com/Fluke667/Privoxy-Silent.git \
 PURPLEI2P_DL=https://github.com/PurpleI2P/i2pd.git \
 SSLH_DL=https://github.com/yrutschle/sslh.git \
-PLUGIN_OBFS_DL=https://github.com/shadowsocks/simple-obfs.git \
-PLUGIN_V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.0/v2ray-plugin-linux-amd64-8cea1a3.tar.gz \
+OBFS_DL=https://github.com/shadowsocks/simple-obfs.git \
 PLUGIN_CLOAK_DL=https://github.com/cbeuw/cloak.git \
 ############### TOR Relay Enviroment
 TOR_CONF=/etc/tor/torrc \
