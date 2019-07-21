@@ -75,13 +75,7 @@ CRT_PUB=/etc/certs/public \
 CRT_PUB_CN=public \
 CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=public" \
 CRT_PUB_EXT=/etc/ssl/public.ext \
-
-
-
-
-
-
-# Openssh Enviroment
+############### Openssh Enviroment
 SSH_BASE_DIR="/etc/ssh" \
 SSH_KEYS_DIR="${SSH_BASE_DIR}/keys" \
 SSH_AUTHKEYS_DIR="${SSH_BASE_DIR}/authorized_keys" \
@@ -107,7 +101,7 @@ SSH_ROOTKEY_PUB=/root/.ssh/id_rsa.pub \
 SSH_ROOTKEY_SIZE=2048 \
 SSH_ROOTKEY_TYPE=rsa \
 SSH_ROOTKEY_PASS=MyPassword \
-# Openvpn Enviroment 
+############### Openvpn Enviroment 
 OVPN_DIR=/etc/openvpn \
 OVPN_CONFIG=/etc/openvpn/openvpn \
 OVPN_DH_KEY_SIZE=2048 \
@@ -127,15 +121,12 @@ OVPN_CCD=$OVPN_DIR/ccd \
 OVPN_DEFROUTE=0 \
 OVPN_CIPHER=AES-256-CBC \
 OVPN_TLS_CIPHER=TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384:TLS-DHE-RSA-WITH-AES-256-CBC-SHA256 \
-# Software Versions Enviroment
-SS_LIBEV_VERSION=v3.2.5 \
-KCP_VERSION=20190424 \
-# pproxy Enviroment
+############### pproxy Enviroment
 PPROXY_USER=Username \
 PPROXY_PASS=Pass \
 PPROXY_CRT=/etc/ssl/certs/cert.crt \
 PPROXY_KEY=/etc/ssl/certs/key.key \
-# shadowsocks-libev (kcptun) Enviroment
+############### shadowsocks-libev (kcptun) Enviroment
 SS_SERVER_ADDR=0.0.0.0 \
 SS_SERVER_PORT=8388 \
 SSPLUG_SERVER_PORT=8377 \
@@ -166,10 +157,10 @@ KCP_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-
 PRVIVOXY_DL=https://github.com/Fluke667/Privoxy-Silent.git \
 PURPLEI2P_DL=https://github.com/PurpleI2P/i2pd.git \
 SSLH_DL=https://github.com/yrutschle/sslh.git \
-#PLUGIN_OBFS_DL=https://github.com/shadowsocks/simple-obfs.git \
-#PLUGIN_V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.0/v2ray-plugin-linux-amd64-8cea1a3.tar.gz \
-#PLUGIN_CLOAK_DL=https://github.com/cbeuw/cloak.git \
-# TOR Relay Enviroment
+PLUGIN_OBFS_DL=https://github.com/shadowsocks/simple-obfs.git \
+PLUGIN_V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.0/v2ray-plugin-linux-amd64-8cea1a3.tar.gz \
+PLUGIN_CLOAK_DL=https://github.com/cbeuw/cloak.git \
+############### TOR Relay Enviroment
 TOR_CONF=/etc/tor/torrc \
 TOR_SOCKS=/etc/tor/torsocks \
 TOR_USER=TorD \
@@ -190,7 +181,7 @@ TOR_OPT_OBFS3="managed" \
 TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
 
-# sslh Enviroment
+############### sslh Enviroment
 SSLH=0.0.0.0:443 \
 SSLH_HOST=127.0.0.1 \
 SSLH_TLS=127.0.0.1:8443 \
@@ -198,12 +189,12 @@ SSLH_SSH=127.0.0.1:22 \
 SSLH_OVPN=127.0.0.1:1194 \
 SSLH_TINC=127.0.0.1:655 \
 SSLH_SSOCKS=127.0.0.1:8388 \
-# Stunnel Enviroment
+############### Stunnel Enviroment
 STUNNEL_CLIENT=no \
 STUNNEL_SERVICE=openvpn \
 STUNNEL_ACCEPT=0.0.0.0:4911 \
 STUNNEL_CONNECT=server:1194 \
-# Privoxy Enviroment
+############### Privoxy Enviroment
 PRV_SERVER=0.0.0.0 \
 PRV_SERVER_PORT=8118 \
 PRV_LOCAL=127.0.0.1 \
