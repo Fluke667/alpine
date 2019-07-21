@@ -163,7 +163,8 @@ PLUGIN_CLOAK_DL=https://github.com/cbeuw/cloak.git \
 ############### TOR Relay Enviroment
 TOR_CONF=/etc/tor/torrc \
 TOR_SOCKS=/etc/tor/torsocks \
-TOR_USER=TorD \
+TOR_USER=tor \
+TOR_GROUP=tor \
 TOR_NICK=MyNick \
 TOR_EMAIL=My@email.com \
 TOR_PASS=MyPass \
