@@ -1,7 +1,7 @@
 FROM  alpine:3.10
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
-RUN apk add --no-cache --no-progress go tzdata wget
+RUN apk add --no-cache --no-progress tzdata wget
 
 ENV LANG=de_DE.UTF-8 \
 LC_ALL=de_DE.UTF-8 \
