@@ -209,10 +209,10 @@ GOPATH=/go \
 GOBIN=/go/bin \
 GO111MODULE=on \
 PATH=/go/bin:$PATH \
-GOOS="$(go env GOOS)" \
-GOARCH="$(go env GOARCH)" \
-GOHOSTOS="$(go env GOHOSTOS)" \
-GOHOSTARCH="$(go env GOHOSTARCH)"
+GOOS=$(go env GOOS) \
+GOARCH=$(go env GOARCH) \
+GOHOSTOS=$(go env GOHOSTOS) \
+GOHOSTARCH=$(go env GOHOSTARCH)
 
 RUN apk add --no-cache --no-progress tzdata wget
 
