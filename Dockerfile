@@ -210,11 +210,11 @@ GOROOT=/usr/lib/go \
 GOPATH=/go \
 GOBIN=/go/bin \
 GO111MODULE=on \
-PATH=/go/bin:$PATH \
-GOOS="$(go env GOOS)" \
-GOARCH="$(go env GOARCH)" \
-GOHOSTOS="$(go env GOHOSTOS)" \
-GOHOSTARCH="$(go env GOHOSTARCH)"
+PATH=/go/bin:$PATH
+#GOOS="$(go env GOOS)" \
+#GOARCH="$(go env GOARCH)" \
+#GOHOSTOS="$(go env GOHOSTOS)" \
+#GOHOSTARCH="$(go env GOHOSTARCH)"
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
     echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
