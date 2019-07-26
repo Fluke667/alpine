@@ -182,7 +182,6 @@ TOR_OPT_MEEK="--port 7002 --cert cert.pem --key key.pem" \
 TOR_OPT_OBFS3="managed" \
 TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
-
 ############### sslh Enviroment
 SSLH=0.0.0.0:443 \
 SSLH_HOST=127.0.0.1 \
@@ -197,6 +196,9 @@ STUNNEL_SERVICE=openvpn \
 STUNNEL_ACCEPT=0.0.0.0:4911 \
 STUNNEL_CONNECT=server:1194 \
 ############### Privoxy Enviroment
+PRV_CONF=/etc/privoxy/config \
+PRV_PID=/var/run/privoxy.pid \
+#
 PRV_SERVER=0.0.0.0 \
 PRV_SERVER_PORT=8118 \
 PRV_LOCAL=127.0.0.1 \
