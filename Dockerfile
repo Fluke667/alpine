@@ -130,6 +130,8 @@ PPROXY_KEY=/etc/ssl/certs/key.key \
 ############### shadowsocks-libev (kcptun) Enviroment
 SS_SERVER_ADDR=0.0.0.0 \
 SS_SERVER_PORT=8388 \
+SS_LOCAL_ADDR=127.0.0.1 \
+SS_LOCAL_PORT=1080 \
 SSPLUG_SERVER_PORT=8377 \
 SSKCP_SERVER_PORT=8366 \
 SS_PASSWORD=MyPass \
