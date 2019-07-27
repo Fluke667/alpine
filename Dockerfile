@@ -1,5 +1,3 @@
-FROM golang:alpine AS builder
-
 FROM  alpine:3.10
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
