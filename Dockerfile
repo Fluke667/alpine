@@ -1,3 +1,5 @@
+FROM golang:alpine AS builder
+
 FROM  alpine:3.10
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
@@ -157,6 +159,9 @@ KCP_NOCOMP='' \
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 KCP_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
 V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin.git \
+MEEK_DL=git.torproject.org/pluggable-transports/meek.git/meek-server \
+OBFS4_DL=git.torproject.org/pluggable-transports/obfs4.git/obfs4proxy \
+SNOW_DL=https://github.com/keroserene/snowflake.git \
 CLOAK_DL=https://github.com/cbeuw/Cloak/releases/download/v1.1.2/ck-server-linux-amd64-1.1.2 \
 PRVIVOXY_DL=https://github.com/Fluke667/Privoxy-Silent.git \
 PURPLEI2P_DL=https://github.com/PurpleI2P/i2pd.git \
