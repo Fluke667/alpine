@@ -32,6 +32,7 @@ CLIENT_NAME=client \
 HOSTNAME=hostname \
 COMMENT=## \
 RNGD_FLAG=true \
+DIR_TMP=/tmp \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SSL_DIR=/etc/ssl \
@@ -144,6 +145,12 @@ SS_OBFS=v2ray-plugin \
 SS_PLUGIN=v2ray-plugin \
 SS_PLUGIN_OPTS=server \
 SS_ARGS= \
+############### Transport Potocols
+CLOAK_FILE=ck-server-linux-amd64-1.1.2 \
+CLOAK_URL=https://github.com/cbeuw/Cloak/releases/download/v1.1.2/ck-server-linux-amd64-1.1.2 \
+CLOAK_DB_PATH=/etc/cloak/db \
+CLOAK_CLIENT_CONFIG=/etc/cloak/ckclient.json \
+CLOAK_VER=1.1.2 \
 KCP_SERVER_ADDR=0.0.0.0 \
 KCP_SERVER_PORT=9443 \
 KCP_PASSWORD=MyPass \
