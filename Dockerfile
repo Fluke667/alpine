@@ -31,6 +31,7 @@ SERVER_NAME=server \
 CLIENT_NAME=client \
 HOSTNAME=hostname \
 COMMENT=## \
+RNGD_FLAG=true \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SSL_DIR=/etc/ssl \
