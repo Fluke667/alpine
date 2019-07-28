@@ -137,6 +137,8 @@ PPROXY_PASS=Pass \
 PPROXY_CRT=/etc/ssl/certs/cert.crt \
 PPROXY_KEY=/etc/ssl/certs/key.key \
 ############### shadowsocks-libev (kcptun) Enviroment
+SSLIBEV_PATH=/usr/bin/ \
+SSLIBEV_CONFIG="/etc/shadowsocks-libev/ \
 SS_SERVER_ADDR=0.0.0.0 \
 SS_SERVER_PORT=8388 \
 SS_LOCAL_ADDR=127.0.0.1 \
@@ -169,6 +171,10 @@ GQ_FILE=gq-server \
 GQ_VER=1.2.2 \
 GQ_WEBSRVADDR=0.0.0.0:443 \
 GQ_KEY=exampleconftest \
+#
+V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.1.0/v2ray-plugin-linux-amd64-v1.1.0.tar.gz \
+V2RAY_FILE=v2ray-plugin-linux-amd64 \
+V2RAY_VER=v1.1.0 \
 #
 KCP_SERVER_ADDR=0.0.0.0 \
 KCP_SERVER_PORT=9443 \
