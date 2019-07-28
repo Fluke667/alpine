@@ -288,6 +288,7 @@ PRV_CONF=/etc/shadowsocks-libev/privoxy.json \
 #GOARCH="$(go env GOARCH)" \
 #GOHOSTOS="$(go env GOHOSTOS)" \
 #GOHOSTARCH="$(go env GOHOSTARCH)"
+CGO_ENABLED=1 \
 GOOS=linux \
 GOARCH=amd64
 
