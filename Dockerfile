@@ -176,6 +176,12 @@ V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.1.0/v2
 V2RAY_FILE=v2ray-plugin-linux-amd64 \
 V2RAY_VER=v1.1.0 \
 #
+KCPTUN_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
+KCPTUN_FILE=kcptun-linux-amd64 \
+KCPTUN_VER=20190718 \
+KCPTUN_DIR=/usr/bin/kcptun-server \
+KCPTUN_CONFIG=/etc/shadowsocks-libev/config/kcptun.json \
+KCPTUN_LOG=/var/log/kcptun-server.log \
 KCP_SERVER_ADDR=0.0.0.0 \
 KCP_SERVER_PORT=9443 \
 KCP_PASSWORD=MyPass \
