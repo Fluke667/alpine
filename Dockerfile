@@ -183,9 +183,13 @@ GQ_KEY=exampleconftest \
 V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.1.0/v2ray-plugin-linux-amd64-v1.1.0.tar.gz \
 V2RAY_FILE=v2ray-plugin-linux-amd64 \
 V2RAY_VER=v1.1.0 \
+V2RAY_BIN=/usr/bin/v2ray-plugin \
+V2RAY_HOST=MyHost.com \
+V2RAY_CRT=/etc/certs/v2ray.crt \
+V2RAY_KEY=/etc/certs/v2ray.key \
 #
-OBFS_OPT_HTTP=server \
-OBFS_OPT_TLS=server;tls;host=mydomain.me \
+OBFS_HTTP=server \
+OBFS_TLS=server;tls;host=mydomain.me \
 #
 KCPTUN_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
 KCPTUN_FILE=kcptun-linux-amd64 \
@@ -193,8 +197,9 @@ KCPTUN_VER=20190718 \
 KCPTUN_DIR=/usr/bin/kcptun-server \
 KCPTUN_CONFIG=/etc/shadowsocks-libev/kcptun.json \
 KCPTUN_LOG=/var/log/kcptun-server.log \
-KCP_LISTEN=0.0.0.0:9443
-KCP_TARGET=127.0.0.1:9999
+KCP_LISTEN_PORT=9443 \
+KCP_TARGET=127.0.0.1 \
+KCP_TARGET_PORT=9999 \
 KCP_KEY=MyPass \
 KCP_CRYPT=aes \
 KCP_MODE=fast3 \
