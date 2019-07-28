@@ -156,12 +156,19 @@ SS_ARGS= \
 CLOAK_URL=https://github.com/cbeuw/Cloak/releases/download/v1.1.2/ck-server-linux-amd64-1.1.2 \
 CLOAK_FILE=ck-server \
 CLOAK_DB_PATH=/etc/cloak/db \
-CLOAK_CLIENT_CONFIG=/etc/cloak/ckclient.json \
 CLOAK_VER=1.1.2 \
+CLOAK_UID=AdminUID \
+CLOAK_PUBKEY=PublicKey \
+CLOAK_SERVNAME=ServerName \
+CLOAK_TTH=3600 \
+CLOAK_NUMMCONN=4 \
+CLOAK_BROWSER=firefox \
 #
-GOQUIET_URL=https://github.com/cbeuw/GoQuiet/releases/download/v1.2.2/gq-server-linux-amd64-1.2.2 \
-GOQUIET_FILE=gq-server \
-GOQUIET_VER=1.2.2 \
+GQ_URL=https://github.com/cbeuw/GoQuiet/releases/download/v1.2.2/gq-server-linux-amd64-1.2.2 \
+GQ_FILE=gq-server \
+GQ_VER=1.2.2 \
+GQ_WEBSRVADDR=0.0.0.0:443 \
+GQ_KEY=exampleconftest \
 #
 KCP_SERVER_ADDR=0.0.0.0 \
 KCP_SERVER_PORT=9443 \
