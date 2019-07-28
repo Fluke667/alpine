@@ -192,9 +192,16 @@ V2RAY_KEY=/etc/certs/v2ray.key \
 OBFS_HTTP=server \
 OBFS_TLS=server;tls;host=mydomain.me \
 #
-OBFS4_SERVER_IP   = 0.0.0.0
-OBFS4_SERVER_PORT = 1231
-OBFS4_CONFIG_DIR  = /etc/obfs4
+OBFS4_GIT=git.torproject.org/pluggable-transports/obfs4.git/obfs4proxy \
+OBFS4_BIN=/usr/bin/obfs4proxy \
+OBFS4_SERVER_IP=0.0.0.0 \
+OBFS4_SERVER_PORT=1516 \
+OBFS4_CONFIG_DIR=/etc/obfs4 \
+OBFS4_WORKING_DIR=/var/lib/obfs4 \
+OBFS4_UID=obfs4 \
+OBFS4_GID=obfs4 \
+OBFS4_LOG_LEVEL=error \
+OBFS4_LOG_IP=false \
 #
 KCPTUN_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
 KCPTUN_FILE=kcptun-linux-amd64 \
