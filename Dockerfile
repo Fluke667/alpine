@@ -146,8 +146,8 @@ SS_PLUGIN=v2ray-plugin \
 SS_PLUGIN_OPTS=server \
 SS_ARGS= \
 ############### Transport Potocols
-CLOAK_FILE=ck-server-linux-amd64-1.1.2 \
 CLOAK_URL=https://github.com/cbeuw/Cloak/releases/download/v1.1.2/ck-server-linux-amd64-1.1.2 \
+CLOAK_FILE=ck-server \
 CLOAK_DB_PATH=/etc/cloak/db \
 CLOAK_CLIENT_CONFIG=/etc/cloak/ckclient.json \
 CLOAK_VER=1.1.2 \
