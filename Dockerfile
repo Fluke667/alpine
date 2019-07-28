@@ -151,6 +151,10 @@ SS_METHOD=aes-256-gcm \
 SS_TIMEOUT=300 \
 SS_DNS=1.1.1.1,1.0.0.1 \
 SS_MAXOPENFILES=1000 \
+SS_FASTOPEN=true \
+SS_MODE1=tcp_only \
+SS_MODE2=udp_only \
+SS_MODE3=tcp_and_udp \
 SS_OBFS=v2ray-plugin \
 SS_PLUGIN=v2ray-plugin \
 SS_PLUGIN_OPTS=server \
@@ -180,6 +184,9 @@ V2RAY_DL=https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.1.0/v2
 V2RAY_FILE=v2ray-plugin-linux-amd64 \
 V2RAY_VER=v1.1.0 \
 #
+OBFS_OPT_HTTP=server \
+OBFS_OPT_TLS=server;tls;host=mydomain.me \
+#
 KCPTUN_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
 KCPTUN_FILE=kcptun-linux-amd64 \
 KCPTUN_VER=20190718 \
@@ -201,6 +208,7 @@ KCP_PARITYSHARD=3 \
 KCP_DSCP=46 \
 KCP_NOCOMP=true \
 KCP_SOCKBUF=16777216 \
+#
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 MEEK_DL=git.torproject.org/pluggable-transports/meek.git/meek-server \
 OBFS4_DL=git.torproject.org/pluggable-transports/obfs4.git/obfs4proxy \
