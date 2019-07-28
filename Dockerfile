@@ -280,14 +280,17 @@ PRV_METHOD=aes-256-gcm \
 PRV_TIMEOUT=60 \
 PRV_CONF=/etc/shadowsocks-libev/privoxy.json \
 ############### Golang Enviroment
-GOROOT=/usr/lib/go \
-GOPATH=/go \
-GOBIN=/go/bin \
-PATH=/go/bin:$PATH
+#GOROOT=/usr/lib/go \
+#GOPATH=/go \
+#GOBIN=/go/bin \
+#PATH=/go/bin:$PATH
 #GOOS="$(go env GOOS)" \
 #GOARCH="$(go env GOARCH)" \
 #GOHOSTOS="$(go env GOHOSTOS)" \
 #GOHOSTARCH="$(go env GOHOSTARCH)"
+GOOS=linux \
+GOARCH=amd64
+
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
     echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
