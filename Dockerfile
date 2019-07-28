@@ -152,6 +152,7 @@ SS_TIMEOUT=300 \
 SS_DNS=1.1.1.1,1.0.0.1 \
 SS_MAXOPENFILES=1000 \
 SS_FASTOPEN=true \
+SS_REUSE_PORT=true \
 SS_MODE1=tcp_only \
 SS_MODE2=udp_only \
 SS_MODE3=tcp_and_udp \
