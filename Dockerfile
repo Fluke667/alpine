@@ -157,10 +157,13 @@ SS_ARGS= \
 ############### Transport Potocols
 CLOAK_URL=https://github.com/cbeuw/Cloak/releases/download/v1.1.2/ck-server-linux-amd64-1.1.2 \
 CLOAK_FILE=ck-server \
+CLOAK_PATH=/etc/cloak \
 CLOAK_DB_PATH=/etc/cloak/db \
 CLOAK_VER=1.1.2 \
+CLOAK_WEBSRVADDR=0.0.0.0:443 \
 CLOAK_UID=AdminUID \
 CLOAK_PUBKEY=PublicKey \
+CLOAK_PRIVKEY=PrivateKey \
 CLOAK_SERVNAME=ServerName \
 CLOAK_TTH=3600 \
 CLOAK_NUMMCONN=4 \
