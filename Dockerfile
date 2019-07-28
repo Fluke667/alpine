@@ -33,6 +33,13 @@ HOSTNAME=hostname \
 COMMENT=## \
 RNGD_FLAG=true \
 DIR_TMP=/tmp \
+SUFFIX=\033[0m \
+COL_GREEN=\033[32m \
+COL_RED=\033[31m \
+COL_YEL=\033[0;33m \
+INFO="${COL_GREEN}[INFO]${SUFFIX}" \
+WARNING="${COL_YEL}[WARN]${SUFFIX}" \
+ERROR="${COL_RED}[ERROR]${SUFFIX}" \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SSL_DIR=/etc/ssl \
