@@ -139,6 +139,7 @@ PPROXY_KEY=/etc/ssl/certs/key.key \
 ############### shadowsocks-libev (kcptun) Enviroment
 SSLIBEV_PATH=/usr/bin/ \
 SSLIBEV_CONFIG="/etc/shadowsocks-libev/ \
+SS_SYSUSER=nobody \
 SS_SERVER_ADDR=0.0.0.0 \
 SS_SERVER_PORT=8388 \
 SS_LOCAL_ADDR=127.0.0.1 \
