@@ -203,18 +203,6 @@ OBFS4_GID=obfs4 \
 OBFS4_LOG_LEVEL=error \
 OBFS4_LOG_IP=false \
 #
-FTE_MODE=server \
-FTE_UPSTREAM_FORMAT=manual-http-request \
-FTE_DOWNSTREAM_FORMAT=manual-http-response \
-FTE_CLIENT_IP=127.0.0.1 \
-FTE_CLIENT_PORT=8079 \
-FTE_SERVER_IP=127.0.0.1 \
-FTE_SERVER_PORT=8080 \
-FTE_PROXY_IP=127.0.0.1 \
-FTE_PROXY_PORT=8081 \
-FTE_RELEASE=20131224 \
-FTE_KEY=MyKey \
-#
 KCPTUN_DL=https://github.com/xtaci/kcptun/releases/download/v20190718/kcptun-linux-amd64-20190718.tar.gz \
 KCPTUN_FILE=kcptun-linux-amd64 \
 KCPTUN_VER=20190718 \
@@ -239,8 +227,6 @@ KCP_NOCOMP=true \
 KCP_SOCKBUF=16777216 \
 #
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
-MEEK_DL=git.torproject.org/pluggable-transports/meek.git/meek-server \
-OBFS4_DL=git.torproject.org/pluggable-transports/obfs4.git/obfs4proxy \
 SNOW_DL=https://github.com/keroserene/snowflake.git \
 PRVIVOXY_DL=https://github.com/Fluke667/Privoxy-Silent.git \
 PURPLEI2P_DL=https://github.com/PurpleI2P/i2pd.git \
