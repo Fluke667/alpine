@@ -136,7 +136,10 @@ PPROXY_USER=Username \
 PPROXY_PASS=Pass \
 PPROXY_CRT=/etc/ssl/certs/cert.crt \
 PPROXY_KEY=/etc/ssl/certs/key.key \
-############### shadowsocks-libev (kcptun) Enviroment
+############### shadowsocks-libev Enviroment
+SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.0/shadowsocks-libev-3.3.0.tar.gz \
+SSLIBEV_FILE=shadowsocks-libev \
+SSLIBEV_VER=3.3.0 \
 SSLIBEV_PATH=/usr/bin/ \
 SSLIBEV_CONFIG=/etc/shadowsocks-libev \
 SS_SYSUSER=shadowsocks \
