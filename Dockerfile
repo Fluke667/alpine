@@ -229,7 +229,6 @@ KCP_DSCP=46 \
 KCP_NOCOMP=true \
 KCP_SOCKBUF=16777216 \
 #
-SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 SNOW_DL=https://github.com/keroserene/snowflake.git \
 PRVIVOXY_DL=https://github.com/Fluke667/Privoxy-Silent.git \
 PURPLEI2P_DL=https://github.com/PurpleI2P/i2pd.git \
