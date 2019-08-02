@@ -254,6 +254,17 @@ TOR_OPT_MEEK="--port 7002 --cert cert.pem --key key.pem" \
 TOR_OPT_OBFS3="managed" \
 TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
+############### Tinc
+TINC_DL=https://www.tinc-vpn.org/packages/ \
+TINC_VER=1.0.35 \
+TINC_DEBUG=5 \
+TINC_NETWORK=VPN-Name \
+TINC_NODE=Hostname \
+TINC_PRIV_IP=IP \
+TINC_PUB_IP=${IP} \
+TINC_INTERFACE=tun0 \
+TINC_PEERS=host1.hostname.com \
+TINC_COMPRESSION=5 \
 ############### sslh Enviroment
 SSLH=0.0.0.0:443 \
 SSLH_HOST=127.0.0.1 \
