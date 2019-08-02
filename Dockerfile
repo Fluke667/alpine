@@ -280,9 +280,20 @@ SSLH_TINC=127.0.0.1:655 \
 SSLH_SSOCKS=127.0.0.1:8388 \
 ############### Stunnel Enviroment
 STUNNEL_CLIENT=no \
+STUNNEL_CONF=/etc/stunnel/stunnel.conf \
+STUNNEL_DEBUG=9 \
+#export STUNNEL_SNI="${STUNNEL_SNI:-}"
+STUNNEL_CAFILE=/etc/certs/ca-certificates.crt \
+STUNNEL_VERIFY_CHAIN=no \
+STUNNEL_KEY=/etc/certs/stunnel.key \
+STUNNEL_CRT=/etc/certs/stunnel.pem \
+STUNNEL_DELAY=no \
 STUNNEL_SERVICE=openvpn \
+
 STUNNEL_ACCEPT=0.0.0.0:4911 \
+
 STUNNEL_CONNECT=server:1194 \
+
 ############### Privoxy Enviroment
 PRV_CONF=/etc/privoxy/config \
 PRV_PID=/var/run/privoxy.pid \
