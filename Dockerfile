@@ -267,7 +267,7 @@ TINC_NETNAME=TincNet \
 TINC_NODE=Hostname \
 TINC_PRIV_IP=IP \
 TINC_PUB_IP=${IP} \
-TINC_INTERFACE=tun0 \
+TINC_INTERFACE=tun1 \
 TINC_PEERS=host1.hostname.com \
 TINC_COMPRESSION=5 \
 ############### sslh Enviroment
