@@ -282,18 +282,21 @@ SSLH_SSOCKS=127.0.0.1:8388 \
 STUNNEL_CLIENT=no \
 STUNNEL_CONF=/etc/stunnel/stunnel.conf \
 STUNNEL_DEBUG=9 \
-#export STUNNEL_SNI="${STUNNEL_SNI:-}"
+#STUNNEL_SNI="${STUNNEL_SNI:-}"
 STUNNEL_CAFILE=/etc/certs/ca-certificates.crt \
 STUNNEL_VERIFY_CHAIN=no \
 STUNNEL_KEY=/etc/certs/stunnel.key \
 STUNNEL_CRT=/etc/certs/stunnel.pem \
 STUNNEL_DELAY=no \
-STUNNEL_SERVICE=openvpn \
-
-STUNNEL_ACCEPT=0.0.0.0:4911 \
-
-STUNNEL_CONNECT=server:1194 \
-
+STUNNEL_SERVICE1=openvpn \
+STUNNEL_SERVICE2=openvpn \
+STUNNEL_SERVICE3=openvpn \
+STUNNEL_ACCEPT1=0.0.0.0:4911 \
+STUNNEL_ACCEPT2=0.0.0.0:4911 \
+STUNNEL_ACCEPT3=0.0.0.0:4911 \
+STUNNEL_CONNECT1=server:1194 \
+STUNNEL_CONNECT2=server:1194 \
+STUNNEL_CONNECT3=server:1194 \
 ############### Privoxy Enviroment
 PRV_CONF=/etc/privoxy/config \
 PRV_PID=/var/run/privoxy.pid \
