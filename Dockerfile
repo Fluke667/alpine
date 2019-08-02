@@ -256,6 +256,7 @@ TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
 ############### Tinc
 TINC_DL=https://www.tinc-vpn.org/packages/ \
+TINC_FILE=tinc- \
 TINC_VER=1.0.35 \
 TINC_DEBUG=5 \
 TINC_NETWORK=VPN-Name \
