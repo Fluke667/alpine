@@ -264,10 +264,10 @@ TINC_CONF=/etc/tinc/tinc.conf \
 TINC_LOG=/var/log/tinc/tinc.log \
 TINC_DEBUG=5 \
 TINC_NETNAME=TincNet \
-TINC_NODE=Hostname \
+TINC_NODE=Multivpn \
 TINC_PRIV_IP=IP \
 TINC_PUB_IP=${IP} \
-TINC_INTERFACE=tun1 \
+TINC_INTERFACE=tun2 \
 TINC_PEERS=host1.hostname.com \
 TINC_COMPRESSION=5 \
 ############### sslh Enviroment
