@@ -260,6 +260,7 @@ TINC_FILE=tinc- \
 TINC_VER=1.0.35 \
 TINC_DIR=/etc/tinc \
 TINC_CONF=/etc/tinc/tinc.conf \
+TINC_CONF=/var/log/tinc/tinc.log \
 TINC_DEBUG=5 \
 TINC_NETWORK=VPN-Name \
 TINC_NODE=Hostname \
