@@ -255,8 +255,7 @@ TOR_OPT_OBFS3="managed" \
 TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
 ############### Tinc
-TINC_DL=https://www.tinc-vpn.org/packages/ \
-TINC_FILE=tinc- \
+TINC_DL=https://www.tinc-vpn.org/packages/tinc-1.1pre17.tar.gz \
 TINC_VER=1.1pre17 \
 TINC_DIR=/etc/tinc \
 TINC_CONF=/etc/tinc/tinc.conf \
