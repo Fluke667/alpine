@@ -257,7 +257,7 @@ TOR_OPT_SNOW="-http 127.0.0.1:9090" \
 ############### Tinc
 TINC_DL=https://www.tinc-vpn.org/packages/ \
 TINC_FILE=tinc- \
-TINC_VER=1.0.35 \
+TINC_VER=1.1pre17 \
 TINC_DIR=/etc/tinc \
 TINC_CONF=/etc/tinc/tinc.conf \
 TINC_LOG=/var/log/tinc/tinc.log \
