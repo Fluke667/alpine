@@ -308,7 +308,6 @@ CGO_ENABLED=1 \
 GOOS=linux \
 GOARCH=amd64
 
-
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
     echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
     echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
