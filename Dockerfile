@@ -85,6 +85,8 @@ CRT_PUB=/etc/certs/public \
 CRT_PUB_CN=public \
 CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=public" \
 CRT_PUB_EXT=/etc/ssl/public.ext \
+# KEY TINC
+KEY_TINC=/etc/certs/tinc \
 ############### Openssh Enviroment
 SSH_BASE_DIR="/etc/ssh" \
 SSH_KEYS_DIR="${SSH_BASE_DIR}/keys" \
