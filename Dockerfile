@@ -239,7 +239,7 @@ SSLH_DL=https://github.com/yrutschle/sslh.git \
 ############### TOR Relay Enviroment
 TOR_CONF=/etc/tor/torrc \
 TOR_SOCKS=/etc/tor/torsocks \
-TOR_USER=tor \
+TOR_USER=tord \
 TOR_GROUP=tor \
 TOR_NICK=MyNick \
 TOR_EMAIL=My@email.com \
