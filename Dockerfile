@@ -136,8 +136,8 @@ OVPN_TLS_CIPHER=TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-1
 ############### pproxy Enviroment
 PPROXY_USER=Username \
 PPROXY_PASS=Pass \
-PPROXY_CRT=/etc/ssl/certs/cert.crt \
-PPROXY_KEY=/etc/ssl/certs/key.key \
+PPROXY_CRT=/etc/certs/pproxy.crt \
+PPROXY_KEY=/etc/certs/pproxy.key \
 ############### shadowsocks-libev Enviroment
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 SSLIBEV_FILE=shadowsocks-libev \
@@ -295,14 +295,17 @@ STUNNEL_VERIFY_CHAIN=no \
 STUNNEL_KEY=/etc/certs/stunnel \
 STUNNEL_CRT=/etc/certs/stunnel \
 STUNNEL_DELAY=no \
-STUNNEL_SERVICE1=openvpn \
+
+STUNNEL_SERVICE=openvpn \
+STUNNEL_ACCEPT=0.0.0.0:587 \
+STUNNEL_CONNECT=0.0.0.0:1194 \
+
 STUNNEL_SERVICE2=openvpn \
-STUNNEL_SERVICE3=openvpn \
-STUNNEL_ACCEPT1=0.0.0.0:4911 \
 STUNNEL_ACCEPT2=0.0.0.0:4911 \
-STUNNEL_ACCEPT3=0.0.0.0:4911 \
-STUNNEL_CONNECT1=server:1194 \
 STUNNEL_CONNECT2=server:1194 \
+
+STUNNEL_SERVICE3=openvpn \
+STUNNEL_ACCEPT3=0.0.0.0:4911 \
 STUNNEL_CONNECT3=server:1194 \
 ############### Privoxy Enviroment
 PRV_CONF=/etc/privoxy/config \
