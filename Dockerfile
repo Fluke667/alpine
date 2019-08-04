@@ -275,6 +275,16 @@ TORSOCKS_LOG_TIME=1 \
 TORSOCKS_LOG_FILE_PATH=/var/log/tor/torsocks.log \
 TORSOCKS_ALLOW_INBOUND=1 \
 #TORSOCKS_ISOLATE_PID= \
+############## I2PD
+I2PD_DL=https://github.com/PurpleI2P/i2pd.git \
+I2PD_HOME=/home/i2pd \
+I2PD_DATA=/home/i2pd/data \
+I2PD_CONF=/etc/i2pd/i2pd.conf \
+I2PD_TUNCONF=/etc/i2pd/tunnels.conf \
+I2PD_USER=i2pd \
+I2PD_GROUP=i2pd \
+I2PD_LOG=/var/log/i2pd/i2pd.log \
+I2PD_PID=/run/i2pd/i2pd.pid \
 ############### Tinc
 TINC_DL=https://www.tinc-vpn.org/packages/tinc-1.1pre17.tar.gz \
 TINC_VER=1.1pre17 \
