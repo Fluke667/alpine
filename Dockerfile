@@ -138,6 +138,7 @@ PPROXY_USER=Username \
 PPROXY_PASS=Pass \
 PPROXY_CRT=/etc/certs/pproxy.crt \
 PPROXY_KEY=/etc/certs/pproxy.key \
+PPROXY_CSR=/etc/certs/pproxy.csr \
 ############### shadowsocks-libev Enviroment
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 SSLIBEV_FILE=shadowsocks-libev \
