@@ -87,6 +87,19 @@ CRT_PUB_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=TB/CN=public" \
 CRT_PUB_EXT=/etc/ssl/public.ext \
 # KEY TINC
 KEY_TINC=/etc/certs/tinc \
+# KEY MEEK
+CRT_MEEK=/etc/certs/meek \
+CRT_MEEK_CN=meek \
+# CRT PPROXY
+CRT_PPROXY=/etc/certs/pproxy \
+CRT_PPROXY_CN=pproxy \
+CRT_PPROXY_SUBJ="/C=DE/ST=Bavaria/L=Nuremberg/O=Server/CN=pproxy" \
+# CRT STUNNEL
+CRT_STUNNEL=/etc/certs/stunnel \
+CRT_STUNNEL_CN=stunnel \
+# CRT V2RAY
+CRT_V2RAY=/etc/certs/v2ray \
+CRT_V2RAY_CN=v2ray \
 ############### Openssh Enviroment
 SSH_BASE_DIR="/etc/ssh" \
 SSH_KEYS_DIR="${SSH_BASE_DIR}/keys" \
@@ -136,7 +149,6 @@ OVPN_TLS_CIPHER=TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-1
 ############### pproxy Enviroment
 PPROXY_USER=Username \
 PPROXY_PASS=Pass \
-PPROXY_CRT=/etc/certs/pproxy \
 ############### shadowsocks-libev Enviroment
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 SSLIBEV_FILE=shadowsocks-libev \
@@ -191,8 +203,6 @@ V2RAY_FILE=v2ray-plugin-linux-amd64 \
 V2RAY_VER=v1.1.0 \
 V2RAY_BIN=/usr/bin/v2ray-plugin \
 V2RAY_HOST=MyHost.com \
-V2RAY_CRT=/etc/certs/v2ray.crt \
-V2RAY_KEY=/etc/certs/v2ray.key \
 #
 OBFS_HTTP=server \
 OBFS_TLS=server;tls;host=mydomain.me \
@@ -250,7 +260,7 @@ TOR_OBFS3=/usr/bin/obfsproxy \
 TOR_OBFS4=/usr/bin/obfs4proxy \
 TOR_SNOW=/usr/bin/webrtc \
 TOR_OPT_FTE="--mode server --managed" \
-TOR_OPT_MEEK="--port 7002 --cert cert.pem --key key.pem" \
+TOR_OPT_MEEK="--port 7002 --cert $CRT_MEEK.pem --key $CRT_MEEK.key" \
 TOR_OPT_OBFS3="managed" \
 TOR_OPT_OBFS4="Custom" \
 TOR_OPT_SNOW="-http 127.0.0.1:9090" \
@@ -291,8 +301,6 @@ STUNNEL_DEBUG=9 \
 #STUNNEL_SNI="${STUNNEL_SNI:-}"
 STUNNEL_CAFILE=/etc/certs/ca.crt \
 STUNNEL_VERIFY_CHAIN=no \
-STUNNEL_KEY=/etc/certs/stunnel \
-STUNNEL_CRT=/etc/certs/stunnel \
 STUNNEL_DELAY=no \
 
 STUNNEL_SERVICE=openvpn \
