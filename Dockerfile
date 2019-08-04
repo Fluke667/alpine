@@ -186,6 +186,7 @@ CLOAK_CLI_CONF=/etc/cloak/ckclient.json \
 CLOAK_DB_PATH=/etc/cloak/userinfo.db \
 CLOAK_VER=1.1.2 \
 CLOAK_WEBSRVADDR=0.0.0.0:443 \
+CLOAK_LOCALADDR=0.0.0.0:8388 \
 CLOAK_UID=AdminUID \
 CLOAK_PUBKEY=PublicKey \
 CLOAK_PRIVKEY=PrivateKey \
