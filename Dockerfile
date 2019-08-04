@@ -136,9 +136,7 @@ OVPN_TLS_CIPHER=TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-1
 ############### pproxy Enviroment
 PPROXY_USER=Username \
 PPROXY_PASS=Pass \
-PPROXY_CRT=/etc/certs/pproxy.crt \
-PPROXY_KEY=/etc/certs/pproxy.key \
-PPROXY_CSR=/etc/certs/pproxy.csr \
+PPROXY_CRT=/etc/certs/pproxy \
 ############### shadowsocks-libev Enviroment
 SSLIBEV_DL=https://github.com/shadowsocks/shadowsocks-libev.git \
 SSLIBEV_FILE=shadowsocks-libev \
