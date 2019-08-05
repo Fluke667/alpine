@@ -210,7 +210,7 @@ V2RAY_HOST=MyHost.com \
 OBFS_HTTP=server \
 OBFS_TLS=server;tls;host=mydomain.me \
 OBFS_SERVER=0.0.0.0 \
-OBFS_PORT=8838 \
+OBFS_PORT=8388 \
 OBFS_DNS=1.1.1.1 \
 OBFS_OPTS=http \
 OBFS_FORWARD=127.0.0.1:8388 \
