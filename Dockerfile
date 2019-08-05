@@ -209,6 +209,11 @@ V2RAY_HOST=MyHost.com \
 #
 OBFS_HTTP=server \
 OBFS_TLS=server;tls;host=mydomain.me \
+OBFS_SERVER=0.0.0.0 \
+OBFS_PORT=8838 \
+OBFS_DNS=1.1.1.1 \
+OBFS_OPTS=http \
+OBFS_FORWARD=127.0.0.1:8388 \
 #
 OBFS4_GIT=git.torproject.org/pluggable-transports/obfs4.git/obfs4proxy \
 OBFS4_BIN=/usr/bin/obfs4proxy \
