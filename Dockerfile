@@ -296,6 +296,15 @@ I2PD_USER=i2pd \
 I2PD_GROUP=i2pd \
 I2PD_LOG=/var/log/i2pd/i2pd.log \
 I2PD_PID=/run/i2pd/i2pd.pid \
+I2PD_RESEED=true \
+I2PD_UPNP=false \
+I2PD_HTTP=true \
+I2PD_HTTPADDR=0.0.0.0 \
+I2PD_HTTPROXY=true \
+I2PD_SOCKS=true \
+I2PD_SOCKSADDR=0.0.0.0 \
+I2PD_SAM=true \
+I2PD_SAMADDR=0.0.0.0 \
 ############### Tinc
 TINC_DL=https://www.tinc-vpn.org/packages/tinc-1.1pre17.tar.gz \
 TINC_VER=1.1pre17 \
