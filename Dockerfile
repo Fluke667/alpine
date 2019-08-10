@@ -376,6 +376,12 @@ PEERVPN_ENABLEIPV4=yes \
 PEERVPN_ENABLEIPV6=no \
 PEERVPN_ENABLENDP=yes \
 PEERVPN_ENABLERELAY=no \
+############### Microsocks
+MICRO_LISTEN=0.0.0.0 \
+MICRO_PORT=2080 \
+MICRO_USER=MyUser \
+MICRO_PASS=MyPass \
+MICRO_BINDADDR=0.0.0.0 \
 ############### Golang Enviroment
 #GOROOT=/usr/lib/go \
 #GOPATH=/go \
