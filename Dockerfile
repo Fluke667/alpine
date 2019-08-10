@@ -141,6 +141,7 @@ OVPN_PORTMAPPING_DIR=/etc/openvpn/portmapping \
 OVPN_CCD_DIR=/etc/openvpn/client \
 OVPN_EASYRSA_DIR=/etc/openvpn/easy-rsa \
 OVPN_SRV_CRT=/etc/openvpn/server \
+OVPN_SRV_CA=/etc/openvpn/server/ca.crt \
 OVPN_CLI_CRT=/etc/openvpn/client \
 OVPN_CLI_CA=/etc/openvpn/client/ca.crt \
 OVPN_SRV_DH=/etc/openvpn/server/dh.pem \
