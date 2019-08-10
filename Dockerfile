@@ -337,20 +337,18 @@ STUNNEL_CONF=/etc/stunnel/stunnel.conf \
 STUNNEL_DEBUG=9 \
 #STUNNEL_SNI="${STUNNEL_SNI:-}"
 STUNNEL_CAFILE=/etc/certs/ca.crt \
+STUNNEL_CERT=/etc/stunnel/stunnel.crt \
+STUNNEL_KEY=/etc/stunnel/stunnel.key \
 STUNNEL_VERIFY_CHAIN=no \
 STUNNEL_DELAY=no \
 
-STUNNEL_SERVICE=openvpn \
-STUNNEL_ACCEPT=0.0.0.0:587 \
-STUNNEL_CONNECT=0.0.0.0:1194 \
+STUNNEL_SERVICE1=openvpn \
+STUNNEL_ACCEPT1=0.0.0.0:6600 \
+STUNNEL_CONNECT1=0.0.0.0:1194 \
 
-STUNNEL_SERVICE2=openvpn \
-STUNNEL_ACCEPT2=0.0.0.0:4911 \
-STUNNEL_CONNECT2=server:1194 \
-
-STUNNEL_SERVICE3=openvpn \
-STUNNEL_ACCEPT3=0.0.0.0:4911 \
-STUNNEL_CONNECT3=server:1194 \
+STUNNEL_SERVICE2=microsocks \
+STUNNEL_ACCEPT2=0.0.0.0:6700 \
+STUNNEL_CONNECT2=0.0.0.0:2080 \
 ############### Privoxy Enviroment
 PRV_CONF=/etc/privoxy/config \
 PRV_PID=/var/run/privoxy.pid \
