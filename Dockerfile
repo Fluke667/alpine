@@ -393,7 +393,24 @@ MICRO_BINDADDR=0.0.0.0 \
 #GOHOSTARCH="$(go env GOHOSTARCH)"
 CGO_ENABLED=1 \
 GOOS=linux \
-GOARCH=amd64
+GOARCH=amd64 \
+############### MariaDB
+MARIADB_DATADIR=/var/lib/mysql \
+MARIADB_HOME=/etc/my.cnf \
+MARIADB_BASEDIR=/usr \
+MARIADB_PLUGDIR=/usr/lib/mysql/plugin \
+MARIADB_RUNUSER=mysql \
+MARIADB_PIDFILE=/run/mysqld/mysqld.pid \
+MARIADB_SOCKET=/run/mysqld/mysqld.sock \
+MARIADB_CHARSET=utf8 \
+MARIADB_COLLATION=utf8_general_ci \
+MAX_ALLOWED_PACKET=200M \
+MARIADB_ROOT_PASS=root_password \
+DB_USER=user_name \
+DB_PASS=user_password \
+DB_DATABASE=user_db \
+DB_HOST=localhost \
+DB_PORT=3306
 
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
