@@ -394,7 +394,15 @@ MICRO_BINDADDR=0.0.0.0 \
 CGO_ENABLED=1 \
 GOOS=linux \
 GOARCH=amd64 \
-############### MariaDB
+############### WEBSERVER
+# Basic Configuration
+HOST_EMAIL=my@email.com \
+HOST_DOMAIN1=domain1.com \
+HOST_DOMAIN2=domain2.com \
+HOST_DOMAIN3=domain3.com \
+# PHP Configuration
+# Nginx Configuration
+# MariaDB
 MARIADB_DATADIR=/var/lib/mysql \
 MARIADB_HOME=/etc/my.cnf \
 MARIADB_BASEDIR=/usr \
@@ -411,9 +419,16 @@ DB_PASS=user_password \
 DB_DATABASE=user_db \
 DB_HOST=localhost \
 DB_PORT=3306 \
-CERTBOT_DOMAINS=mydomain.com \
-CERTBOT_EMAIL=name@myemail.com \
+# Nextcloud
+NEXTCLOUD_PATH=/var/www/nextcloud \
+NEXTCLOUD_CONF=/var/www/nextcloud/config/config \
 NEXTCLOUD_DL=https://download.nextcloud.com/server/releases/latest
+NEXTCLOUD_DB_USER=user_name \
+NEXTCLOUD_DB_PASS=user_password \
+NEXTCLOUD_DB_DATABASE=user_db \
+NEXTCLOUD_DB_HOST=localhost \
+NEXTCLOUD_DB_PORT=3306
+
 
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
