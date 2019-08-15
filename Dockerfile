@@ -412,7 +412,8 @@ DB_DATABASE=user_db \
 DB_HOST=localhost \
 DB_PORT=3306 \
 CERTBOT_DOMAINS=mydomain.com \
-CERTBOT_EMAIL=name@myemail.com
+CERTBOT_EMAIL=name@myemail.com \
+NEXTCLOUD_DL=https://download.nextcloud.com/server/releases/latest
 
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
