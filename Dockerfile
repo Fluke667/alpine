@@ -422,10 +422,10 @@ DB_PORT=3306 \
 # Nextcloud
 NEXTCLOUD_PATH=/var/www/nextcloud \
 NEXTCLOUD_CONF=/var/www/nextcloud/config/config \
-NEXTCLOUD_DL=https://download.nextcloud.com/server/releases/latest
-NEXTCLOUD_DB_USER=user_name \
-NEXTCLOUD_DB_PASS=user_password \
-NEXTCLOUD_DB_DATABASE=user_db \
+NEXTCLOUD_DL=https://download.nextcloud.com/server/releases/latest \
+NEXTCLOUD_DB_USER=nextcloud \
+NEXTCLOUD_DB_PASS=nextpass \
+NEXTCLOUD_DB_DATABASE=nextcloud \
 NEXTCLOUD_DB_HOST=localhost \
 NEXTCLOUD_DB_PORT=3306
 
