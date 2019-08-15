@@ -410,7 +410,9 @@ DB_USER=user_name \
 DB_PASS=user_password \
 DB_DATABASE=user_db \
 DB_HOST=localhost \
-DB_PORT=3306
+DB_PORT=3306 \
+CERTBOT_DOMAINS=mydomain.com \
+CERTBOT_EMAIL=name@myemail.com
 
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
