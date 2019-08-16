@@ -397,9 +397,13 @@ GOARCH=amd64 \
 ############### WEBSERVER
 # Basic Configuration
 HOST_EMAIL=my@email.com \
-HOST_DOMAIN1=domain1.com \
-HOST_DOMAIN2=domain2.com \
-HOST_DOMAIN3=domain3.com \
+HOST_EMAIL=My@Email.com \
+HOST1_DN=my@domain.com \
+HOST1_DIR=/etc/ssl/certs/ \
+HOST2_DN=my@domain.com \
+HOST2_DIR=/etc/ssl/certs/ \
+HOST3_DN=my@domain.com \
+HOST3_DIR=/etc/ssl/certs/ \
 # PHP Configuration
 # Nginx Configuration
 # MariaDB
