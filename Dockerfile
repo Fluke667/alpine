@@ -404,11 +404,11 @@ GOARCH=amd64 \
 # Basic Configuration
 HOST_EMAIL=my@email.com \
 HOST_EMAIL=My@Email.com \
-HOST1_DN=my@domain.com \
+HOST1_DN=domain1.com \
 HOST1_DIR=/etc/ssl/certs/ \
-HOST2_DN=my@domain.com \
+HOST2_DN=domain2.com \
 HOST2_DIR=/etc/ssl/certs/ \
-HOST3_DN=my@domain.com \
+HOST3_DN=domain3.com \
 HOST3_DIR=/etc/ssl/certs/ \
 # PHP Configuration
 # Nginx Configuration
@@ -430,8 +430,8 @@ DB_DATABASE=user_db \
 DB_HOST=localhost \
 DB_PORT=3306 \
 # Nextcloud
-NEXTCLOUD_PATH=/var/www/nextcloud \
-NEXTCLOUD_CONF=/var/www/nextcloud/config/config \
+NEXTCLOUD_PATH="/var/www/$HOST1_DN/nextcloud" \
+NEXTCLOUD_CONF="/var/www/$HOST1_DN/nextcloud/config/config" \
 NEXTCLOUD_DL=https://download.nextcloud.com/server/releases/latest \
 NEXTCLOUD_DB_USER=nextcloud \
 NEXTCLOUD_DB_PASS=nextpass \
