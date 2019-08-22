@@ -412,6 +412,8 @@ HOST3_DN=domain3.com \
 HOST3_DIR=/etc/ssl/certs/ \
 # PHP Configuration
 # Nginx Configuration
+NGINX_WWWUSER=www-data \
+NGINX_WWWGRP=www-data \
 # MariaDB
 MARIADB_DATADIR=/var/lib/mysql \
 MARIADB_HOME=/etc/my.cnf \
