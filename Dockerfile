@@ -30,6 +30,7 @@ IP_LOCAL=127.0.0.1 \
 SERVER_NAME=server \
 CLIENT_NAME=client \
 HOSTNAME=hostname \
+ROOTUSR=root \
 COMMENT=## \
 RNGD_FLAG=true \
 DIR_TMP=/tmp \
@@ -412,7 +413,7 @@ HOST3_DN=domain3.com \
 HOST3_DIR=/etc/ssl/certs/ \
 # PHP Configuration
 # Nginx Configuration
-NGINX_WWWUSER=www-data \
+NGINX_WWWUSR=www-data \
 NGINX_WWWGRP=www-data \
 # MariaDB
 MARIADB_DATADIR=/var/lib/mysql \
