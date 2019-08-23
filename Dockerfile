@@ -1,4 +1,4 @@
-FROM  alpine:3.10
+FROM alpine:3.10
 FROM fluke667/alpine-java:latest AS javabuilder
 FROM fluke667/alpine-golang:latest AS gobuilder
 FROM fluke667/alpine-builder:latest AS appbuilder
@@ -30,7 +30,7 @@ GO111MODULE=auto \
 PATH=/go/bin:$PATH
 CPU=$(grep -c ^processor /proc/cpuinfo); \
 RAM=$(free -m | awk '/^Mem:/{print $2}'); \
-IP_ADDR=${IP} \
+IP_ADDR=$(curl -s http://whatismyip.akamai.com/ && echo); \
 IP_NONROUTE=0.0.0.0 \
 IP_LOCAL=127.0.0.1 \
 SERVER_NAME=server \
