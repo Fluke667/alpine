@@ -396,17 +396,19 @@ MICRO_USER=MyUser \
 MICRO_PASS=MyPass \
 MICRO_BINDADDR=0.0.0.0 \
 ############### Golang Enviroment
+GOLANG_VERSION=1.12.9 \
 #GOROOT=/usr/lib/go \
-#GOPATH=/go \
+GOPATH=/go \
 #GOBIN=/go/bin \
 #PATH=/go/bin:$PATH
-#GOOS="$(go env GOOS)" \
-#GOARCH="$(go env GOARCH)" \
-#GOHOSTOS="$(go env GOHOSTOS)" \
-#GOHOSTARCH="$(go env GOHOSTARCH)"
-CGO_ENABLED=1 \
-GOOS=linux \
-GOARCH=amd64 \
+GOOS="$(go env GOOS)" \
+GOARCH="$(go env GOARCH)" \
+GOHOSTOS="$(go env GOHOSTOS)" \
+GOHOSTARCH="$(go env GOHOSTARCH)" \
+GOROOT_BOOTSTRAP="$(go env GOROOT)" \
+#CGO_ENABLED=1 \
+#GOOS=linux \
+#GOARCH=amd64 \
 ############### WEBSERVER
 # Basic Configuration
 HOST_EMAIL=my@email.com \
