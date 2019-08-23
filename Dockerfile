@@ -1,7 +1,7 @@
 FROM alpine:3.10
-FROM fluke667/alpine-java:latest AS javabuilder
-FROM fluke667/alpine-golang:latest AS gobuilder
-FROM fluke667/alpine-builder:latest AS appbuilder
+#FROM fluke667/alpine-java:latest AS javabuilder
+#FROM fluke667/alpine-golang:latest AS gobuilder
+#FROM fluke667/alpine-builder:latest AS appbuilder
 
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
@@ -27,7 +27,7 @@ LOGGER=true \
 GOROOT=/usr/lib/go \
 GOPATH=/go \
 GO111MODULE=auto \
-PATH=/go/bin:$PATH
+PATH=/go/bin:/opt/jdk/bin:$PATH \
 CPU=$(grep -c ^processor /proc/cpuinfo); \
 RAM=$(free -m | awk '/^Mem:/{print $2}'); \
 IP_ADDR=$(curl -s http://whatismyip.akamai.com/ && echo); \
@@ -466,7 +466,10 @@ NEXTCLOUD_DB_USER=nextcloud \
 NEXTCLOUD_DB_PASS=nextpass \
 NEXTCLOUD_DB_DATABASE=nextcloud \
 NEXTCLOUD_DB_HOST=localhost \
-NEXTCLOUD_DB_PORT=3306
+NEXTCLOUD_DB_PORT=3306 \
+# Java
+JAVA_HOME=/opt/jdk \
+JAVA_PATH=/opt/jdk/bin
 
 
 
