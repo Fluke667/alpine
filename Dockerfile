@@ -406,7 +406,7 @@ GOHOSTOS="$(go env GOHOSTOS)" \
 GOHOSTARCH="$(go env GOHOSTARCH)" \
 GOROOT_BOOTSTRAP="$(go env GOROOT)" \
 GO111MODULE=auto \
-#CGO_ENABLED=1 \
+CGO_ENABLED=1 \
 #GOOS=linux \
 #GOARCH=amd64 \
 ############### WEBSERVER
