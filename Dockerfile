@@ -24,9 +24,7 @@ LC_TELEPHONE=de_DE.UTF-8 \
 LC_MEASUREMENT=de_DE.UTF-8 \
 TZ=Europe/Berlin \
 LOGGER=true \
-#GOROOT=/usr/lib/go \
-#GOPATH=/go \
-PATH=/go/bin:/usr/local/go/bin:/opt/jdk/bin:$PATH \
+PATH=/go/bin:/opt/jdk/bin:$PATH \
 CPU="$(grep -c ^processor /proc/cpuinfo)" \
 RAM="$(free -m | awk '/^Mem:/{print $2}')" \
 IP_ADDR="$(curl -s http://whatismyip.akamai.com/ && echo)" \
@@ -396,15 +394,20 @@ MICRO_PASS=MyPass \
 MICRO_BINDADDR=0.0.0.0 \
 ############### Golang Enviroment
 GOLANG_VERSION=1.12.9 \
-#GOROOT=/usr/lib/go \
 GOPATH=/go \
+GOLIB=/go/lib \
+GOROOT=/go/lib \
 GOBIN=/go/bin \
-#PATH=/go/bin:$PATH
+GOSRC=/go/src \
+GOPKG=/go/pkg \
+GOTMPDIR=/go/tmp \
+GOCACHE=/go/cache \
+GORACE="log_path=/var/log/golang.log" \
 GOOS=linux \
 GOARCH=amd64 \
 GOHOSTOS=linux \
 GOHOSTARCH=amd64 \
-GOROOT_BOOTSTRAP=/usr/lib/go \
+GOROOT_BOOTSTRAP=/go/lib \
 GO111MODULE=auto \
 CGO_ENABLED=1 \
 ############### WEBSERVER
