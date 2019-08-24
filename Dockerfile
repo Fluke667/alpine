@@ -5,7 +5,7 @@ FROM alpine:3.10
 
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
-RUN apk add --no-cache --no-progress tzdata wget
+RUN apk add --no-cache --no-progress tzdata wget openssl curl ca-certificates
 
 ENV LANG=de_DE.UTF-8 \
 LC_ALL=de_DE.UTF-8 \
@@ -481,8 +481,19 @@ JAVA_PATH=/opt/jdk/bin
 
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
-    echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
-    echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
+    wget -P /etc/apk/keys https://nginx.org/keys/nginx_signing.rsa.pub
+    ###
+RUN cat >/etc/apk/repositories<<-EOF
+    http://dl-cdn.alpinelinux.org/alpine/v3.10/main
+    http://dl-cdn.alpinelinux.org/alpine/v3.10/community
+    https://alpine-repo.sourceforge.io/packages
+    http://dl-4.alpinelinux.org/alpine/edge/testing/
+    http://nginx.org/packages/alpine/v3.10/main"
+    http://nginx.org/packages/mainline/alpine/v3.10/main
+    EOF
+
+
+    
     #apk update && apk add --no-cache obfs4proxy meek simple-obfs
 
 ONBUILD RUN \
