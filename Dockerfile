@@ -402,6 +402,10 @@ GOSRC=/go/src \
 GOPKG=/go/pkg \
 GOTMPDIR=/go/tmp \
 GOCACHE=/go/cache \
+GOMODIR=/go/mod \
+GOMOD=/go/mod/dockweb.mod \
+GOVENDOR=/go/vendor \
+GOTOOLDIR=/go/pkg/tool/linux_amd64 \
 GORACE="log_path=/var/log/golang.log" \
 GOOS=linux \
 GOARCH=amd64 \
