@@ -1,7 +1,7 @@
+FROM fluke667/alpine-java:latest AS javabuilder
+FROM fluke667/alpine-golang:latest AS gobuilder
+FROM fluke667/alpine-builder:latest AS appbuilder
 FROM alpine:3.10
-#FROM fluke667/alpine-java:latest AS javabuilder
-#FROM fluke667/alpine-golang:latest AS gobuilder
-#FROM fluke667/alpine-builder:latest AS appbuilder
 
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
