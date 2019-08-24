@@ -481,14 +481,15 @@ JAVA_PATH=/opt/jdk/bin
 
 
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
-    wget -P /etc/apk/keys https://nginx.org/keys/nginx_signing.rsa.pub
+    wget -P /etc/apk/keys https://nginx.org/keys/nginx_signing.rsa.pub && \
+    wget -P /etc/apk/keys https://repos.php.earth/alpine/phpearth.rsa.pub
     ###
-RUN cat >/etc/apk/repositories<<-EOF
-    http://dl-cdn.alpinelinux.org/alpine/v3.10/main
+    /etc/apk/repositories<<-EOF
+    echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/main <<
     http://dl-cdn.alpinelinux.org/alpine/v3.10/community
     https://alpine-repo.sourceforge.io/packages
     http://dl-4.alpinelinux.org/alpine/edge/testing/
-    http://nginx.org/packages/alpine/v3.10/main"
+    http://nginx.org/packages/alpine/v3.10/main
     http://nginx.org/packages/mainline/alpine/v3.10/main
     EOF
 
