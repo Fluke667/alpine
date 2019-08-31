@@ -24,7 +24,7 @@ LC_TELEPHONE=de_DE.UTF-8 \
 LC_MEASUREMENT=de_DE.UTF-8 \
 TZ=Europe/Berlin \
 LOGGER=true \
-PATH=/go/bin:/opt/jdk/bin:$PATH \
+PATH=/go/bin:/opt/jdk/bin:/home/dockweb/python3/bin:$PATH \
 CPU="$(grep -c ^processor /proc/cpuinfo)" \
 RAM="$(free -m | awk '/^Mem:/{print $2}')" \
 IP_ADDR="$(curl -s http://whatismyip.akamai.com/ && echo)" \
@@ -476,7 +476,22 @@ NEXTCLOUD_DB_HOST=localhost \
 NEXTCLOUD_DB_PORT=3306 \
 # Java
 JAVA_HOME=/opt/jdk \
-JAVA_PATH=/opt/jdk/bin
+JAVA_PATH=/opt/jdk/bin \
+# Python
+VIRTUAL_ENV=/home/dockweb/python3 \
+PYTHONPATH=/home/dockweb/python3/bin \
+PYTHONUSERBASE=/home/dockweb/python3/lib/python3.7/site-packages \
+PYTHONHOME=/home/dockweb/python3/lib/python3.7 \
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.7 \
+PYTHONDONTWRITEBYTECODE=1 \
+PYTHONUNBUFFERED=1 \
+###### WEB FRAMEWORKS
+UWSGI_INI=/etc/uwsgi/uwsgi.ini \
+UWSGI_CHEAPER=2 \
+UWSGI_PROCESSES=4 \
+RAILS_ENV=production \
+RAILS_LOG_TO_STDOUT=true \
+RAILS_SERVE_STATIC_FILES=true
 
 
 
