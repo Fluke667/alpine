@@ -34,6 +34,7 @@ SERVER_NAME=server \
 CLIENT_NAME=client \
 HOSTNAME=hostname \
 ROOTUSR=root \
+SHELL=/bin/bash \
 COMMENT=## \
 RNGD_FLAG=true \
 DIR_TMP=/tmp \
