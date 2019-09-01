@@ -507,6 +507,7 @@ RAILS_SERVE_STATIC_FILES=true
 RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.com-00000000.rsa.pub && \
     wget -P /etc/apk/keys https://nginx.org/keys/nginx_signing.rsa.pub && \
     wget -P /etc/apk/keys https://repos.php.earth/alpine/phpearth.rsa.pub && \
+    wget -P /etc/apk/keys https://dl.bintray.com/php-alpine/key/php-alpine.rsa.pub && \
     ###
     echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/main" >> /etc/apk/repositories && \
     echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/repositories && \
@@ -515,12 +516,12 @@ RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.c
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     echo "https://alpine-repo.sourceforge.io/packages" >> /etc/apk/repositories && \
     echo "http://nginx.org/packages/alpine/v3.10/main" >> /etc/apk/repositories && \
-    echo "http://nginx.org/packages/mainline/alpine/v3.10/main" >> /etc/apk/repositories
+    echo "http://nginx.org/packages/mainline/alpine/v3.10/main" >> /etc/apk/repositories && \
+    echo "https://dl.bintray.com/php-alpine/v3.9/php-7.3" >> /etc/apk/repositories
 
 
 
     
-    #apk update && apk add --no-cache obfs4proxy meek simple-obfs
 
 ONBUILD RUN \
     echo "$TZ" > /etc/timezone \
