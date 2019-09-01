@@ -54,6 +54,10 @@ SEPARATOR_01="——————————————————————
 SEPARATOR_02="##############################" \
 ############### Software Versions
 VER_YARN=1.17.3 \
+VER_NODEJS=v12.9.1 \
+VER_NPM=6 \
+VER_PHP=7.3 \
+VER_NGINX=1.17.3 \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SSL_DIR=/etc/ssl \
