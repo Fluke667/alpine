@@ -52,6 +52,8 @@ ERROR="${COL_RED}[ERROR]:${COL_RESET}" \
 WARNING="${COL_YEL}[WARNING]:${COL_RESET}" \
 SEPARATOR_01="——————————————————————————————" \
 SEPARATOR_02="##############################" \
+############### Software Versions
+VER_YARN=1.17.3 \
 ############### Openssl Certificate Generate
 CRT_CERT_DIR=/etc/certs \
 CRT_SSL_DIR=/etc/ssl \
