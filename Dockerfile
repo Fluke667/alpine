@@ -13,7 +13,7 @@ LANGUAGE=de_DE.UTF-8 \
 TZ=Europe/Berlin \
 LOGGER=true \
 DEBUG=false \
-PATH=/go/bin:/opt/jdk/bin:/home/dockweb/python3/bin:$PATH \
+PATH=/go/bin:/opt/jdk/bin:$PATH \
 CPU="$(grep -c ^processor /proc/cpuinfo)" \
 RAM="$(free -m | awk '/^Mem:/{print $2}')" \
 IP_ADDR="$(curl -s http://whatismyip.akamai.com/ && echo)" \
@@ -178,9 +178,13 @@ RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.c
     echo "http://nginx.org/packages/alpine/v3.10/main" >> /etc/apk/repositories && \
     echo "http://nginx.org/packages/mainline/alpine/v3.10/main" >> /etc/apk/repositories && \
     echo "https://dl.bintray.com/php-alpine/v3.9/php-7.3" >> /etc/apk/repositories
-
-
-
+    #addgroup -S mysql && addgroup -S nginx && addgroup -Sg 82 www-data && addgroup nginx www-data && \
+    #addgroup -S redis && addgroup -S uwsgi && addgroup -g 1011 node && \
+    #adduser -u 1011 -G node -s /bin/bash -D node && \
+    #adduser -S -D -H -h /var/lib/nginx -s /sbin/nologin -G nginx -g nginx nginx && \
+    #adduser -S -D -h /var/lib/mysql -s /sbin/nologin -G mysql -g mysql mysql && \
+    #adduser -S -D -H -h /var/lib/redis -s /bin/false -G redis -g redis redis && \
+    #useradd -m -s /bin/bash  -U  dockweb && \
     
 
 ONBUILD RUN \
