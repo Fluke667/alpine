@@ -11,5 +11,6 @@ adduser -S -D -h /var/lib/mysql -s /sbin/nologin -G mysql -g mysql mysql
 adduser -S -D -H -h /var/lib/redis -s /bin/false -G redis -g redis redis
 useradd -m -s /bin/bash  -U  dockweb
 
+cat /etc/passwd
 
 
