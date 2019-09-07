@@ -5,7 +5,7 @@ FROM alpine:3.10
 
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
-RUN apk add --no-cache --no-progress tzdata wget openssl curl ca-certificates
+RUN apk add --no-cache --no-progress tzdata wget openssl curl ca-certificates coreutils
 
 ENV LC_ALL=de_DE.UTF-8 \
 LANG=de_DE.UTF-8 \
