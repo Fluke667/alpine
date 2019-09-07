@@ -187,6 +187,10 @@ RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.c
     #useradd -m -s /bin/bash  -U  dockweb && \
     
 
-ONBUILD RUN \
-    echo "$TZ" > /etc/timezone \
-    && cp "/usr/share/zoneinfo/$TZ" /etc/localtime
+#ONBUILD RUN \
+#    echo "$TZ" > /etc/timezone \
+#    && cp "/usr/share/zoneinfo/$TZ" /etc/localtime
+
+COPY cmd.sh /cmd.sh
+RUN chmod a+x /cmd.sh
+CMD sh /cmd.sh
