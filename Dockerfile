@@ -24,6 +24,7 @@ LC_TELEPHONE=de_DE.UTF-8 \
 LC_MEASUREMENT=de_DE.UTF-8 \
 TZ=Europe/Berlin \
 LOGGER=true \
+DEBUG=false \
 PATH=/go/bin:/opt/jdk/bin:/home/dockweb/python3/bin:$PATH \
 CPU="$(grep -c ^processor /proc/cpuinfo)" \
 RAM="$(free -m | awk '/^Mem:/{print $2}')" \
@@ -507,6 +508,7 @@ UWSGI_PROCESSES=4 \
 RAILS_ENV=production \
 RAILS_LOG_TO_STDOUT=true \
 RAILS_SERVE_STATIC_FILES=true
+
 
 
 
