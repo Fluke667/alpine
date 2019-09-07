@@ -48,9 +48,9 @@ COL_YEL="\033[0;33m" \
 COL_BG_GREEN="\033[42;37m" \
 COL_BG_RED="\033[41;37m" \
 COL_RESET="\033[0m" \
-INFO="${COL_GREEN}[INFORMATION]:${COL_RESET}" \
-ERROR="${COL_RED}[ERROR]:${COL_RESET}" \
-WARNING="${COL_YEL}[WARNING]:${COL_RESET}" \
+INFO="${COL_GREEN}"[INFORMATION]:"${COL_RESET}" \
+ERROR="${COL_RED}"[ERROR]:"${COL_RESET}" \
+WARNING="${COL_YEL}"[WARNING]:"${COL_RESET}" \
 SEPARATOR_01="——————————————————————————————" \
 SEPARATOR_02="##############################" \
 ############### Software Versions
