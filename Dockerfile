@@ -191,6 +191,6 @@ RUN wget -P /etc/apk/keys https://alpine-repo.sourceforge.io/DDoSolitary@gmail.c
 #    echo "$TZ" > /etc/timezone \
 #    && cp "/usr/share/zoneinfo/$TZ" /etc/localtime
 
-COPY cmd.sh /cmd.sh
-RUN chmod a+x /cmd.sh
-CMD sh /cmd.sh
+COPY cmd.sh /usr/bin/
+RUN chmod a+x /usr/bin/cmd.sh
+CMD ["cmd.sh"]
