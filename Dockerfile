@@ -1,7 +1,7 @@
 FROM fluke667/alpine-java:latest AS javabuilder
 FROM fluke667/alpine-golang:latest AS gobuilder
 FROM fluke667/alpine-builder:latest AS appbuilder
-FROM alpine:3.10
+FROM FROM php:7.3.9-fpm-alpine3.10
 
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
@@ -47,6 +47,9 @@ VER_NODEJS=v12.9.1 \
 VER_NPM=6 \
 VER_PHP=7.3 \
 VER_NGINX=1.17.3 \
+VER_LUA=0.10.14 \
+VER_DEVKIT=0.3.0 \
+VER_GEOIP2=3.2 \
 ############### Golang Enviroment
 #GOLANG_VERSION=1.12.9 \
 #GOPATH=/go \
@@ -159,7 +162,10 @@ UWSGI_CHEAPER=2 \
 UWSGI_PROCESSES=4 \
 RAILS_ENV=production \
 RAILS_LOG_TO_STDOUT=true \
-RAILS_SERVE_STATIC_FILES=true
+RAILS_SERVE_STATIC_FILES=true \
+###### LUA
+LUAJIT_LIB=/usr/lib \
+LUAJIT_INC=/usr/include/luajit-2.1
 
 
 
