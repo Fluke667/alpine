@@ -1,7 +1,7 @@
 FROM fluke667/alpine-java:latest AS javabuilder
 FROM fluke667/alpine-golang:latest AS gobuilder
 FROM fluke667/alpine-builder:latest AS appbuilder
-FROM FROM php:7.3.9-fpm-alpine3.10
+FROM php:7.3.9-fpm-alpine3.10
 
 LABEL maintainer="Fluke667 <Fluke667@gmail.com>"
 
